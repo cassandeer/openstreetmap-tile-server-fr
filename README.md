@@ -1,5 +1,8 @@
 # openstreetmap-tile-server in 🇫🇷
 
+![Static Badge](https://img.shields.io/badge/requirement-docker-blue)
+
+
 This project allows you to easily set up an OpenStreetMap PNG tile server given a .osm.pbf file with French label for location.
 
 Inspired by [osmfr-cartocss](https://github.com/cquest/osmfr-cartocss) for mapnik file.
