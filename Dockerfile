@@ -25,6 +25,11 @@ RUN cd ~ \
 && sed -i 's/Noto Sans Syriac Eastern Regular/Noto Sans Syriac Regular/g' style/fonts.mss \
 && rm -rf .git
 
+# idk what i do but it works 
+COPY mapnik-fr.xml /home/renderer/src/openstreetmap-carto/mapnik.xml 
+COPY mapnik-fr.xml /data/style/mapnik.xml 
+COPY mapnik-fr.xml /home/renderer/src/openstreetmap-carto-backup/mapnik.xml 
+COPY mapnik-fr.xml /root/openstreetmap-carto/mapnik.xml 
 ###########################################################################################################
 
 FROM compiler-common AS compiler-helper-script
