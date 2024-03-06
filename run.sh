@@ -34,12 +34,6 @@ if [ ! "$(ls -A /data/style/)" ]; then
     mv /home/renderer/src/openstreetmap-carto-backup/* /data/style/
 fi
 
-# carto build
-if [ ! -f /data/style/mapnik.xml ]; then
-    cd /data/style/
-    carto ${NAME_MML:-project.mml} > mapnik.xml
-fi
-
 if [ "$1" == "import" ]; then
     # Ensure that database directory is in right state
     mkdir -p /data/database/postgres/
